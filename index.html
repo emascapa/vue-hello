@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+      
+    <div id="app">
+        <div :class="container_custom_class">
+            <h1 :class="h1_custom_class">{{awesomeMessage}}</h1>
+            <div :class="container_custom_class_2">
+                <img :src="custome_img_src_1" alt="" :class="image_custom_class" @click="sayBulba">
+                <img :src="custome_img_src_2" alt="" :class="image_custom_class" @click="sayCharme">
+                <img :src="custome_img_src_3" alt="" :class="image_custom_class" @click="saySquero">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- For prototyping or learning purposes -->
+    <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js'></script>
+    <!-- For production, we recommend linking to a specific version number and build to avoid unexpected breakage from newer versions -->
+    <!-- <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14'></script> -->
+
+    <script src="./app.js"></script>
+
+  </body>
+</html>
